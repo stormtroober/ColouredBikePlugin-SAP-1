@@ -19,6 +19,6 @@ tasks.test {
 }
 
 tasks.jar {
-    archiveFileName.set("app.jar")
-    destinationDirectory.set(file("plugins"))
+    archiveFileName.set("ColorStateEffect.jar")
+    destinationDirectory.set(file("../Assignment-01-SAP/plugins"))
 }
