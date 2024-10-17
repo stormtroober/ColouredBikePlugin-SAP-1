@@ -20,4 +20,5 @@ tasks.test {
 
 tasks.jar {
     archiveFileName.set("app.jar")
+    destinationDirectory.set(file("plugins"))
 }
