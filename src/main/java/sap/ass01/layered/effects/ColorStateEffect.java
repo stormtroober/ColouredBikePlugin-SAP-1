@@ -1,7 +1,7 @@
 package sap.ass01.layered.effects;
 
-import sap.ass01.layered.plugin.ColorStatePlugin;
 import sap.ass01.layered.services.dto.EBikeDTO;
+import sap.ass01.layered.presentation.plugin.ColorStatePlugin;
 
 import java.awt.*;
 

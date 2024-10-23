@@ -1,4 +1,4 @@
-package sap.ass01.layered.plugin;
+package sap.ass01.layered.presentation.plugin;
 
 import sap.ass01.layered.services.dto.EBikeDTO;
 
