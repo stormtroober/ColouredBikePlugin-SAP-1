@@ -18,7 +18,20 @@ tasks.test {
     useJUnitPlatform()
 }
 
-tasks.jar {
+// Task to create JAR for layered architecture
+tasks.register<Jar>("layeredJar") {
     archiveFileName.set("ColorStateEffect.jar")
-    destinationDirectory.set(file("../Assignment-01-SAP/plugins"))
+    destinationDirectory.set(file("../Assignment-01-SAP/layered/plugins"))
+    from(sourceSets.main.get().output) {
+        include("sap/ass01/layered/**")
+    }
+}
+
+// Task to create JAR for hexagonal architecture
+tasks.register<Jar>("hexagonalJar") {
+    archiveFileName.set("ColorStateEffect.jar")
+    destinationDirectory.set(file("../Assignment-01-SAP/hexagonal/plugins"))
+    from(sourceSets.main.get().output) {
+        include("sap/ass01/hexagonal/**")
+    }
 }
